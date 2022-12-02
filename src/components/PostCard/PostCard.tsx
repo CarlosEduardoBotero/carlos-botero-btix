@@ -19,7 +19,7 @@ const PostCard = forwardRef<HTMLDivElement | null, IpostCard>((props, ref) => {
       className="w-full flex flex-col shadow-lg gap-4 p-6 bg-white rounded-md"
       ref={ref ? ref : null}
     >
-      <Link to={props.username} state={{ userId: props.userId }}>
+      <Link to={`/${props.username}/${props.userId}`}>
         <p>{props.name}</p>
         <p className="text-gray-500">{props.username}</p>
       </Link>
