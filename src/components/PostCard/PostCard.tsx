@@ -33,7 +33,7 @@ const PostCard = forwardRef<HTMLDivElement | null, IpostCard>((props, ref) => {
         <button
           tabIndex={0}
           role="button"
-          className="self-end text-gray-900 cursor-pointer"
+          className="self-end cursor-pointer text-blue-500 font-medium"
           onClick={handleShowComments}
           onKeyDown={handlePress}
         >
