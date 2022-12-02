@@ -15,7 +15,6 @@ const CommentsContainer: React.FC<ICommentsContainer> = ({ id }) => {
         `https://jsonplaceholder.typicode.com/posts/${id}/comments/`
       );
       const data = await response.json();
-      console.log("error try");
       setCommentsList(data);
     } catch (error) {
       setError(true);
